@@ -29,7 +29,7 @@ $Query = "SELECT
             [max_length]  
           FROM
             [sys].[columns] c INNER JOIN
-            [sys].[systypes] st ON st.xtype = c.system_type_id INNER JOIN
+            [sys].[systypes] st ON st.xusertype = c.system_type_id INNER JOIN
             [sys].[tables] t ON c.[object_id] = t.[object_id] INNER JOIN
             [sys].[schemas] sc ON t.[schema_id] = sc.[schema_id]
           WHERE
